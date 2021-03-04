@@ -22,7 +22,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100vh;
-  background: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg), #4bae19;
+  background: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg), #19a2ae;
   background-repeat: no-repeat;
   background-position: right calc(50vw) bottom calc(40vh), left calc(50vw) top calc(50vh);
   font-family: 'Kumbh Sans', sans-serif;
