@@ -1,0 +1,104 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('/images/bg-pattern-top.svg'), url('/images/bg-pattern-bottom.svg'), hsl(185, 75%, 39%);
+    background-repeat: no-repeat;
+    background-position: right calc(50vw) bottom calc(40vh), left calc(50vw) top calc(50vh);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        width: 24.5rem;
+        height: 27rem;
+        border-radius: 13.8px;
+        background-color: rgb(243, 243, 243);
+        box-shadow: 0 2rem 8rem rgba(0, 0, 0, .2);
+        overflow: hidden;
+
+        &__top {
+            
+            .bg_pic {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &__middle {
+            height: 24vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 1px solid rgb(204, 204, 204);
+
+            img {
+                margin-top: -3.3rem;
+                border-radius: 50%;
+                border: 0.4rem solid rgb(243, 243, 243);
+            }
+
+            .title {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 1.8rem 7.7rem 1rem 7.7rem;
+                font-size: small;
+
+                .name {
+                    color: rgb(83, 83, 83);
+                    font-weight: 700;
+                }
+
+                .age {
+                    font-weight: 400;
+                    color: rgb(98, 98, 98);
+                }
+            }
+
+            .location {
+                color: rgb(138, 137, 137);
+                font-weight: 400;
+            }
+
+        }
+
+        &__bottom {
+            padding-left: 5rem;
+            padding-right: 5rem;
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+
+            .figure {
+                h3 {
+                    padding-bottom: .5rem;
+                    color: rgb(69, 69, 69);
+                }
+                p {
+                    font-size: x-small;
+                    letter-spacing: 2px;
+                    color: hsl(0, 0%, 57%);
+                }
+            }
+        }
+    }
+}
