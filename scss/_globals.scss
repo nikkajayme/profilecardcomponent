@@ -14,7 +14,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg'), hsl(185, 75%, 39%);
+    background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg), hsl(185, 75%, 39%);
     background-repeat: no-repeat;
     background-position: right calc(50vw) bottom calc(40vh), left calc(50vw) top calc(50vh);
     font-family: 'Kumbh Sans', sans-serif;
